@@ -37,4 +37,8 @@
 .value__head, .value__list {
 	max-width: 80%;
 }
+
+.address__wrap {
+	width: 48%;
+}
 }
