@@ -1,0 +1,27 @@
+@media (max-width: 1180px) {
+.header__container {
+	padding: 0 40px;
+} 
+
+.intro__wrap {
+	margin: 90px 0 0 40px;
+}
+}
+
+@media (min-width: 1441px) {
+.flex-container {
+	max-width: 100%;
+}
+
+.intro__pic_wrap {
+	max-width: 40%;
+}
+
+.intro_pic_secondary {
+	max-width: 80%;
+}
+
+.intro__wrap {
+	max-width: 35%;
+}
+}
