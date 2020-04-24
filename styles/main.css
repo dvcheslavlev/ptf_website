@@ -68,8 +68,8 @@ main {
 
 .freepik {
 	position: absolute;
-	top: 30%;
-	right: 10%;
+	top: 5%;
+	right: 3%;
 	width: 80px;
 	font-family: Euphemia, sans-serif;
 	font-size: 10px;
@@ -226,6 +226,11 @@ main {
 	padding: 100px 40px 50px;
 	flex-direction: column;
 	align-items: center;
+	background: url(img/arrow_r_1.png) 100% 0% no-repeat, 
+                url(img/arrow_b_1.png) 100% 25% no-repeat,
+                url(img/arrow_r_2.png) 0 75% no-repeat, 
+                url(img/arrow_b_2.png) 0 95% no-repeat;
+
 }
 
 .email__wrap, .twitter__wrap {
