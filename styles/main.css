@@ -79,10 +79,10 @@ main {
 }
 
 .demo-slide__container {
-	padding: 100px 100px 200px 40px;
+	padding: 100px 100px 50px 40px;
 	justify-content: space-between;
-	background: url(img/arrow_r_1.png) 100% 60% no-repeat, 
-                url(img/arrow_b_1.png) 100% 80% no-repeat;
+	background: url(img/arrow_r_1.png) 100% 50% no-repeat, 
+                url(img/arrow_b_1.png) 100% 85% no-repeat;
 
 }
 
@@ -120,7 +120,7 @@ main {
 }
 
 .technology-slide__container {
-	padding: 0 40px 100px 40px;
+	padding: 100px 40px 50px;
 	justify-content: space-between;
 }
 
@@ -174,4 +174,36 @@ main {
 	font-family: "Montserrat";
 	font-weight: 275;
 	text-align: center;
+}
+
+.value-slide__container {
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 100px 40px;
+}
+
+.value__head {
+	width: 1150px;
+	text-align: left;
+}
+
+.value__list {
+	margin-top: 30px;
+	list-style-type: disc;
+	max-width: 1150px;
+}
+
+.value__item {
+	margin-bottom: 25px;
+	font-size: 14px;
+	color: #686868;
+	font-family: "Montserrat";
+	font-weight: 275;
+	text-align: justify;
+}
+
+.value__item:before {
+	content: '\2022';
+	font-size: 30px;
+	color: #2059ad;
 }
