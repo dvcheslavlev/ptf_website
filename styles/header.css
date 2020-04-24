@@ -17,7 +17,7 @@
 	max-width: 140px;
 }
 
-.navbar {
+.header__navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
