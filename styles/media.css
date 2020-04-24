@@ -26,7 +26,11 @@
 	max-height: initial;
 }
 
-.demo-descriprion__wrap {
+.demo-descriprion__wrap, .technology__wrap_left {
 	max-width: 31%;
+}
+
+.technology__wrap_right {
+	max-width: 48%;
 }
 }
