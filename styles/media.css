@@ -30,7 +30,11 @@
 	max-width: 31%;
 }
 
-.technology__wrap_right {
+.technology__wrap_right, .email__wrap, .twitter__wrap, .feedback-form__wrap  {
 	max-width: 48%;
+}
+
+.value__head, .value__list {
+	max-width: 80%;
 }
 }
