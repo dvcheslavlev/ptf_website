@@ -81,7 +81,7 @@ main {
 .demo-slide__container {
 	padding: 100px 100px 50px 40px;
 	justify-content: space-between;
-	background: url(img/arrow_r_1.png) 100% 50% no-repeat, 
+	background: url(img/arrow_r_1.png) 100% 70% no-repeat, 
                 url(img/arrow_b_1.png) 100% 85% no-repeat;
 
 }
@@ -122,6 +122,8 @@ main {
 .technology-slide__container {
 	padding: 100px 40px 50px;
 	justify-content: space-between;
+	background: url(img/arrow_r_2.png) 0 85% no-repeat, 
+                url(img/arrow_b_2.png) 0 100% no-repeat;
 }
 
 .technology__wrap_left {
@@ -139,6 +141,8 @@ main {
 
 .technology__pic_wrap {
 	max-width: 380px;
+	margin-top: -30px;
+	overflow: hidden;
 }
 
 .technology__wrap_right {
@@ -206,4 +210,70 @@ main {
 	content: '\2022';
 	font-size: 30px;
 	color: #2059ad;
+}
+
+.animation__container {
+	justify-content: center;
+	margin-top: -200px;
+}
+
+.animation__wrap {
+	max-width: 1000px;
+	z-index: -1;
+}
+
+.contacts-slide__container {
+	padding: 100px 40px 50px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.email__wrap, .twitter__wrap {
+	max-width: 690px;
+	margin-bottom: 70px;
+}
+
+.email__introduction, .twitter__introduction, .feedback__introduction {
+	line-height: initial;
+	margin-bottom: 25px;
+}
+
+.email__address {
+	font-size: 16px;
+	color: #7a7a7a;
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+
+.twitter__links a {
+	font-size: 16px;
+	color: #7cafd3;
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+
+.icon-twitter {
+	color: #00acee;
+}
+
+.feedback-form__wrap {
+	max-width: 690px;
+	display: flex;
+	flex-direction: column;
+}
+
+#feedback__text {
+	width: 100%;
+	height: 130px;
+	margin: 25px 0;
+	background-color: #f2f2f2;
+	border: none;
+	outline: none;
+	box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset; 
+} 
+
+.feedback__submit {
+	width: 180px;
+	height: 50px;
+	align-self: flex-end;
 }
