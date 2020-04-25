@@ -91,6 +91,11 @@ main {
 	max-height: 480px;
 }
 
+.demo__wrap iframe {
+	width: 690px; 
+	height: 480px;
+}
+
 .demo-descriprion__wrap {
 	display: flex;
 	flex-direction: column;
@@ -122,7 +127,7 @@ main {
 .technology-slide__container {
 	padding: 100px 40px 50px;
 	justify-content: space-between;
-	background: url(img/arrow_r_2.png) 0 85% no-repeat, 
+	background: url(img/arrow_r_2.png) 0 82% no-repeat, 
                 url(img/arrow_b_2.png) 0 100% no-repeat;
 }
 
@@ -130,7 +135,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 450px;
+	max-width: 600px;
 	margin-right: 20px;
 }
 
@@ -146,7 +151,7 @@ main {
 }
 
 .technology__wrap_right {
-	max-width: 690px;
+	max-width: 570px;
 }
 
 .technology__items__head {
@@ -158,14 +163,14 @@ main {
 	flex-direction: row-reverse;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	margin: 15px 0;
+	margin-bottom: 15px;
 }
 
 .technology-item {
 	display: block;
-	max-width: 210px;
-	max-height: 206px;
-	margin: 10px;
+	width: 160px;
+	height: 160px;
+	margin: 15px;
 	border-radius: 6px;
 	filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.09));
 	background-color: #ffffff;
@@ -192,13 +197,13 @@ main {
 }
 
 .value__list {
-	margin-top: 30px;
+	margin-top: 20px;
 	list-style-type: disc;
 	max-width: 1150px;
 }
 
 .value__item {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	font-size: 14px;
 	color: #686868;
 	font-family: "Montserrat";
