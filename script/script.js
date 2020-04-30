@@ -23,7 +23,8 @@ $(document).ready(function(){
       e.preventDefault();
       data = $(".feedback-form__wrap").serialize();
       jQuery.post("script/info.php", data);
+      $('#feedback__text').hide();
       $(".feedback__submit").hide();
-      $(".feedback-form__wrap").append("<p class='thanks'>Thanks for leaving us your valuable feedback</p>");
+      $(".feedback-form__wrap").append("<p class='thanks head-secondary'>Thanks for leaving us your valuable feedback</p>");
     });
 });
