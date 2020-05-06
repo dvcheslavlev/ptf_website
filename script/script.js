@@ -6,6 +6,12 @@ $(document).ready(function(){
       'event_label': 'feedback'});
     $(this).prop("disabled",true);
     $(this).css("opacity",'0.5');
+    $(this).css('cursor', 'default');
+    $('.puch__animation__container').fadeIn(100);
+    function cleanPunch() {
+            $('.puch__animation__container').hide();
+        }
+    setTimeout(cleanPunch, 700);
   });
 
   $(".btn-blue.like-btn_mobile").click(function(){

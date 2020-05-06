@@ -60,6 +60,11 @@ main {
 	overflow: hidden;
 }
 
+.intro_gif {
+	max-width: 320px;
+	margin-top: 30px;
+}
+
 .intro_pic_secondary img {
 	filter: drop-shadow(2.878px 20px 10px rgba(0,0,0,0.14));
 }
@@ -82,7 +87,7 @@ main {
 }
 
 .demo-slide__container {
-	padding: 180px 220px 180px 130px;
+	padding: 180px 260px 180px 130px;
 	justify-content: space-between;
 	background: url(img/arrow_slide_2.png) 100% 89% no-repeat;
 }
@@ -117,7 +122,7 @@ main {
 }
 
 .like-btn {
-	width: 300px;
+	width: 270px;
 	height: 55px;
 	margin-top: 40px;
 }
@@ -127,6 +132,13 @@ main {
 	width: 200px;
 	height: 40px;
 	margin-top: 50px;
+}
+
+.puch__animation__container {
+	display: none;
+	width: 270px;
+	height: 40px;
+	margin-top: 20px;
 }
 
 .technology-slide__container {
