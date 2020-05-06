@@ -4,12 +4,16 @@ $(document).ready(function(){
     gtag('event', 'demo_like', {
       'event_category': 'click',
       'event_label': 'feedback'});
+    $(this).prop("disabled",true);
+    $(this).css("opacity",'0.5');
   });
 
   $(".btn-blue.like-btn_mobile").click(function(){
     gtag('event', 'demo_like', {
       'event_category': 'click',
       'event_label': 'feedback'});
+    $(this).prop("disabled",true);
+    $(this).css("opacity",'0.5');
   });
 
   $(".youtube__frame").click(function(){

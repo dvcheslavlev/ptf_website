@@ -21,6 +21,11 @@ main {
 	margin: 75px 0 0 125px;
 }
 
+.arrow-gif__container {
+	width: 150px;
+	align-self: flex-end;
+}
+
 .intro__block_left {
 	z-index: 2;
 }
@@ -241,11 +246,11 @@ main {
 
 .animation__container {
 	justify-content: center;
-	margin-top: -200px;
+	margin-top: -150px;
 }
 
 .animation__wrap {
-	max-width: 1000px;
+	max-width: 50%;
 	z-index: -1;
 }
 
@@ -319,4 +324,18 @@ main {
 	max-width: 650px;
 	height: 150px;
 	text-align: center; 
+}
+
+.cookieconsent {
+	background-image: linear-gradient(267deg, #2d2d2d 0%, #404040 99%);
+	text-align: justify;
+	color: white;
+	font-size: 14px;
+	color: #7a7a7a;
+	font-family: "Montserrat";
+	font-weight: 400;
+}
+
+.cookieconsent a {
+	color: #7cafd3;
 }

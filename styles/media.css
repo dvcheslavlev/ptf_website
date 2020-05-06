@@ -119,6 +119,11 @@
 	margin: 75px 0 0 40px;
 }
 
+.arrow-gif__container {
+	width: 120px;
+}
+
+
 .like-btn {
 	width: 220px;
 	height: 50px;
@@ -169,6 +174,10 @@
 }
 
 .intro__pic_wrap, .freepik, .like-btn {
+	display: none;
+}
+
+.arrow-gif__container {
 	display: none;
 }
 
