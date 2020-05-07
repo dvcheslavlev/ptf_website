@@ -24,35 +24,57 @@
 		<link rel="stylesheet" type="text/css" href="styles/header.css">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 		<link rel="stylesheet" type="text/css" href="styles/footer.css">
+		<link rel="stylesheet" href="styles/owl.carousel.min.css">
+		<link rel="stylesheet" href="styles/owl.theme.default.min.css">
 		<link rel="stylesheet" type="text/css" href="styles/media.css">
 
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<header class="headbar">
 			<div class="header__container flex-container">
-				<div class="header__logo">
-					<a href="#home">
+				<a class="header__logo__link" href="#home">
+					<div class="header__logo">
 						<img src="img/ptf_logo_white.png">
-					</a>
-				</div>
+					</div>
+				</a>
 				
 				<ul class="header__navbar">
 					<li>
-						<a class="header__navbar_block nav__link" href="#demo">demo</a>
+						<a class="nav__link" href="#demo">demo</a>
 					</li>
 					<li>
-						<a class="header__navbar_block nav__link" href="#technology">technology</a>
+						<a class="nav__link" href="#technology">technology</a>
 					</li>
 					<li>
-						<a class="header__navbar_block nav__link" href="#value">value</a>
+						<a class="nav__link" href="#value">value</a>
 					</li>
 					<li>
-						<a class="header__navbar_block nav__link" href="#contact">contact</a>
+						<a class="nav__link" href="#contact">contact</a>
 					</li>
 				</ul>
+				<button class="mobile-nav__btn">
+					<span class="icon-menu mob-nav__icon"></span>
+				</button>
 			</div>		
 		</header>
+		
+		<div class="header__navbar_mobile flex-container">
+			<ul class="navbar_mobile">
+				<li>
+					<a class="nav__link_mobile" href="#demo">demo</a>
+				</li>
+				<li>
+					<a class="nav__link_mobile" href="#technology_mobile">technology</a>
+				</li>
+				<li>
+					<a class="nav__link_mobile" href="#value">value</a>
+				</li>
+				<li>
+					<a class="nav__link_mobile" href="#contact">contact</a>
+				</li>
+			</ul>
+		</div>
 		
 		<main id="home">
 			<section class="intro__container flex-container">
@@ -73,11 +95,20 @@
 						</p>
 					</figcaption>
 
-					<div class="intro_pic_secondary">
+					 <div class="intro_pic_secondary">
 						<img src="img/octagon.png">
 					</div>
+
+					<!-- <div class="intro_gif">
+						<img src="img/3d_reconstruction.gif">
+					</div> -->
 				</figure>
-				
+
+				<div class="arrow-gif__container">
+					<img src="img/demo_arrow_gif_2.gif">
+					<!-- <img src="img/demo_arrow_gif.gif"> -->
+				</div>
+
 				<figure class="intro__pic_wrap">
 					<img src="img/fighter.png" alt="PTF-fighter">
 				</figure>
@@ -88,7 +119,13 @@
 
 			<section id="demo" class="demo-slide__container flex-container">
 				<div class="demo__wrap">
-					<img class="youtube__frame" src="img/youtube-play.png">
+					<!-- <img class="youtube__frame" src="img/youtube-play.png"> -->
+					<iframe class="demo-video" src="https://www.youtube.com/embed/6Jlif7kKf5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<button type="button" class="btn-blue like-btn_mobile" aria-label="LIKE-button">
+						<span>like</span>
+						<span class="icon-thumbs-up-alt"></span>
+					</button>
 				</div>
 
 				<div class="demo-descriprion__wrap">
@@ -104,6 +141,59 @@
 						<span>like</span>
 						<span class="icon-thumbs-up-alt"></span>
 					</button>
+
+					<div class="puch__animation__container">
+						<img src="img/punch.gif">
+					</div>
+				</div>
+			</section>
+
+			<section id="technology_mobile" class="technology__slider__wrap  slider__1 flex-container">
+				<h2 class="head-secondary technology__slider__head">
+					What we can do in the nearest future:
+				</h2>
+				<div class="owl-carousel owl-theme slider-style">
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							Animated 2D virtual ads
+						</h3>
+						<img src="img/animated_2d_ads.png">
+					</div>
+
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							Simple gamification
+						</h3>
+						<img src="img/simple_gamification.png">
+					</div>
+
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							Virtual advertising
+						</h3>
+						<img src="img/virtual_fix.png">
+					</div>
+
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							Visual effects
+						</h3>
+						<img src="img/virtual_effects.png">
+					</div>
+
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							3D infographics
+						</h3>
+						<img src="img/3D_infographic.png">
+					</div>
+
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							Animated 3D virtual ads
+						</h3>
+						<img src="img/3D_advarsiting.png">
+					</div>
 				</div>
 			</section>
 
@@ -134,37 +224,37 @@
 							<h3 class="item__head">
 								Animated 2D virtual ads
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/animated_2d_ads.png">
 						</li>
 						<li class="technology-item">
 							<h3 class="item__head">
 								Simple gamification
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/simple_gamification.png">
 						</li>
 						<li class="technology-item">
 							<h3 class="item__head">
 									Virtual advertising
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/virtual_fix.png">
 						</li>
 						<li class="technology-item">
 							<h3 class="item__head">
 								Visual effects
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/virtual_effects.png">
 						</li>
 						<li class="technology-item">
 							<h3 class="item__head">
 								3D infographics
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/3D_infographic.png">
 						</li>
 						<li class="technology-item">
 							<h3 class="item__head">
 								Animated 3D virtual ads
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/3D_advarsiting.png">
 						</li>
 					</ul>
 
@@ -177,21 +267,50 @@
 							<h3 class="item__head">
 								3D reconstruction
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/3D_reconstraction.png">
 						</li>
 						<li class="technology-item">
 							<h3 class="item__head">
 								Advanced gamification
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/advanced_gamification.png">
 						</li>
 						<li class="technology-item">
 							<h3 class="item__head">
 								Fight analytics
 							</h3>
-							<img src="img/item_img.png">
+							<img src="img/fight_anal.png">
 						</li>
 					</ul>
+				</div>
+			</section>
+
+			<section class="technology__slider__wrap slider__2 flex-container">
+				<h2 class="head-secondary technology__slider__head">
+					Research stage:
+				</h2>
+
+				<div class="owl-carousel owl-theme slider-style">
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							3D reconstruction
+						</h3>
+						<img src="img/3D_reconstraction.png">
+					</div>
+
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							Advanced gamification
+						</h3>
+						<img src="img/advanced_gamification.png">
+					</div>
+
+					<div class="item technology-item_mobile">
+						<h3 class="item__head">
+							Fight analytics
+						</h3>
+						<img src="img/fight_anal.png">
+					</div>
 				</div>
 			</section>
 			
@@ -237,6 +356,9 @@
 			</section>
 
 			<section id="contact" class="contacts-slide__container flex-container">
+				<h2 class="contacts__head head-secondary">
+					Contact
+				</h2>
 				<div class="email__wrap">
 					<p class="email__introduction general-text">
 						We are looking for partners to cover our backs and accelerate our growth! If you are interested in collaborating with us, please, send us an e-mail to the following address:
@@ -256,7 +378,7 @@
 
 					<span class="twitter__links">
 						<a href="https://twitter.com/punch_to_face" title="Our Twitter">
-							@punchtoface	
+							@punch_to_face	
 						</a>
 
 						<a href="https://twitter.com/punch_to_face" title="Our Twitter">
@@ -283,7 +405,7 @@
 				<address class="address__wrap">
 					<span class="twitter__links footer__link">
 						<a href="https://twitter.com/punch_to_face" title="Our Twitter">
-							@punchtoface	
+							@punch_to_face	
 						</a>
 
 						<a href="https://twitter.com/punch_to_face" title="Our Twitter">
@@ -301,8 +423,9 @@
 		</footer>
 
 		<script src="script/jquery-3.4.1.min.js"></script>
+		<script src="script/cookie_message.js"></script>
+		<script src="script/owl.carousel.min.js"></script>
 		<script src="script/modernizr-custom.js"></script>
 		<script src="script/script.js"></script>
-                <script src="script/cookie_message.js"></script>
 	</body>
 </html>
