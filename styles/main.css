@@ -220,7 +220,7 @@ main {
 	will-change: transform;
 }
 
-.technology-item:hover {
+.technology-item__active {
 	transform: scale(0.9);
 	transition: 0.3s;
 	filter: none;

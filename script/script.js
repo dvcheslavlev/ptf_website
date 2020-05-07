@@ -93,9 +93,11 @@ $('.mobile-nav__btn').click(function() {
 
 $('#3d_rec').click(function() {
   $('.card__active').hide();
+  $('.technology-item__active').removeClass('technology-item__active');
   $('.card__active').removeClass('card__active');
   $('#3d_rec_card').addClass('card__active');
   $('#3d_rec_card').fadeIn(400);
+  $(this).addClass('technology-item__active');
 });
 
 $('#3d_rec_mob').click(function() {
@@ -107,9 +109,11 @@ $('#3d_rec_mob').click(function() {
 
 $('#simp_gam').click(function() {
   $('.card__active').hide();
+  $('.technology-item__active').removeClass('technology-item__active');
   $('.card__active').removeClass('card__active');
   $('#simp_gam_card').addClass('card__active');
   $('#simp_gam_card').fadeIn(400);
+  $(this).addClass('technology-item__active');
 });
 
 $('#simp_gam_mob').click(function() {
