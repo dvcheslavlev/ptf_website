@@ -1,17 +1,21 @@
 $(document).ready(function(){
 
   $(".btn-blue.like-btn").click(function(){
-    gtag('event', 'demo_like', {
-      'event_category': 'click',
-      'event_label': 'feedback'});
-    $(this).prop("disabled",true);
-    $(this).css("opacity",'0.5');
-    $(this).css('cursor', 'default');
-    $('.puch__animation__container').fadeIn(100);
-    function cleanPunch() {
-            $('.puch__animation__container').hide();
+    // gtag('event', 'demo_like', {
+    //   'event_category': 'click',
+    //   'event_label': 'feedback'});
+    // $(this).prop("disabled",true);
+    // $(this).css({"opacity": '0.5',
+    //               'cursor': 'default'});
+    $(this).fadeOut(100);
+    function showPunch() {
+        $('.puch__animation__container').fadeIn(100);
         }
-    setTimeout(cleanPunch, 700);
+    setTimeout(showPunch, 300);
+    function cleanPunch() {
+        $('.puch__animation__container').hide();
+        }
+    setTimeout(cleanPunch, 1000);
   });
 
   $(".btn-blue.like-btn_mobile").click(function(){
@@ -84,5 +88,33 @@ $('.mobile-nav__btn').click(function() {
   $('.header__navbar_mobile').slideToggle(200);
 });
 
+//   вот так работает на соответствущих десктопных клетках но не работает на мобильных.... мобильные объекты (клетки) 
+// это #simp_gam_mob и #3d_rec_mob соот-но
 
+$('#3d_rec').click(function() {
+  $('.card__active').hide();
+  $('.card__active').removeClass('card__active');
+  $('#3d_rec_card').addClass('card__active');
+  $('#3d_rec_card').fadeIn(400);
+});
 
+$('#3d_rec_mob').click(function() {
+  $('.card__active').hide();
+  $('.card__active').removeClass('card__active');
+  $('#3d_rec_card').addClass('card__active');
+  $('#3d_rec_card').fadeIn(400);
+});
+
+$('#simp_gam').click(function() {
+  $('.card__active').hide();
+  $('.card__active').removeClass('card__active');
+  $('#simp_gam_card').addClass('card__active');
+  $('#simp_gam_card').fadeIn(400);
+});
+
+$('#simp_gam_mob').click(function() {
+  $('.card__active').hide();
+  $('.card__active').removeClass('card__active');
+  $('#simp_gam_card').addClass('card__active');
+  $('#simp_gam_card').fadeIn(400);
+});

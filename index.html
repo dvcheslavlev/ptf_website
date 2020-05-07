@@ -4,14 +4,14 @@
 		<html lang="en">
 	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163800432-1"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163800432-1"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
 		gtag('config', 'UA-163800432-1');
-		</script>
+		</script> -->
 
 		<meta charset="utf-8">
 
@@ -161,7 +161,7 @@
 					</div>
 
 					<div class="item technology-item_mobile">
-						<h3 class="item__head">
+						<h3 id="simp_gam_mob" class="item__head">
 							Simple gamification
 						</h3>
 						<img src="img/simple_gamification.png">
@@ -198,21 +198,43 @@
 			</section>
 
 			<section id="technology" class="technology-slide__container flex-container">
-				<figure class="technology__wrap_left">
-					<figcaption>
-						<h2 class="head-secondary technology__head">
-							Simple gamification
-						</h2>
+				<div class="technology__wrap_left">
+					<div id="simp_gam_card" class="technology__card card__active card__default">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Simple gamification
+								</h2>
 
-						<p class="general-text technology__description">
-							Many of MMA fans also enjoy playing fight games and would appreciate some of the game features appear on live airings and replays of MMA fights. We can use the information on position of fighters in the video frame to add things like animation of fighter`s name or adding rotating circles around fighter`s legs. We can also add health bars or any other game-like 2D or 3D animations 
-						</p>
-					</figcaption>
+								<p class="general-text technology__description">
+									Many of MMA fans also enjoy playing fight games and would appreciate some of the game features appear on live airings and replays of MMA fights. We can use the information on position of fighters in the video frame to add things like animation of fighter`s name or adding rotating circles around fighter`s legs. We can also add health bars or any other game-like 2D or 3D animations 
+								</p>
+							</figcaption>
 
-					<div class="technology__pic_wrap">
-						<img src="img/octagon.png">
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
 					</div>
-				</figure>
+
+					<div id="3d_rec_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									3D reconstruction
+								</h2>
+
+								<p class="general-text technology__description">
+									"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+				</div>
 
 				<div class="technology__wrap_right">
 					<h2 class="head-secondary technology__items__head">
@@ -226,7 +248,7 @@
 							</h3>
 							<img src="img/animated_2d_ads.png">
 						</li>
-						<li class="technology-item">
+						<li id="simp_gam" class="technology-item">
 							<h3 class="item__head">
 								Simple gamification
 							</h3>
@@ -263,7 +285,7 @@
 					</h2>
 
 					<ul class="technology__items_list">
-						<li class="technology-item">
+						<li id="3d_rec" class="technology-item">
 							<h3 class="item__head">
 								3D reconstruction
 							</h3>
@@ -291,7 +313,7 @@
 				</h2>
 
 				<div class="owl-carousel owl-theme slider-style">
-					<div class="item technology-item_mobile">
+					<div id="3d_rec_mob" class="item technology-item_mobile">
 						<h3 class="item__head">
 							3D reconstruction
 						</h3>
