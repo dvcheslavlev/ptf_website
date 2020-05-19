@@ -17,7 +17,10 @@
 
 		<title>Punch To Face official website</title>
 
-		<link rel="shortcut icon" href="styles/img/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" sizes="180x180" href="styles/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="styles/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="styles/favicon/favicon-16x16.png">
+		<link rel="manifest" href="styles/favicon/site.webmanifest">
 		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 		<link rel="stylesheet" type="text/css" href="styles/styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/fonts.css"> 
@@ -65,7 +68,7 @@
 					<a class="nav__link_mobile" href="#demo">demo</a>
 				</li>
 				<li>
-					<a class="nav__link_mobile" href="#technology_mobile">technology</a>
+					<a class="nav__link_mobile" href="#technology-mob">technology</a>
 				</li>
 				<li>
 					<a class="nav__link_mobile" href="#value">value</a>
@@ -91,7 +94,7 @@
 							Removing boundaries between reality and imagination
 						</h2>
 						<p class="general-text intro__description">
-							With our one-of-a-kind technology we are able to with minimal effort integrate any 2D or 3D animations into real fight videos, creating a new niche in advertising and entrtainment industries
+							With our one-of-a-kind technology we are able to integrate with minimal effort any 2D or 3D animations into real fight videos, creating a new niche in advertising and entertainment industries.
 						</p>
 					</figcaption>
 
@@ -105,8 +108,9 @@
 				</figure>
 
 				<div class="arrow-gif__container">
-					<img src="img/demo_arrow_gif_2.gif">
-					<!-- <img src="img/demo_arrow_gif.gif"> -->
+					<a class="nav__link" href="#demo">
+						<img src="img/demo_arrow_gif_2.gif">
+					</a>
 				</div>
 
 				<figure class="intro__pic_wrap">
@@ -122,10 +126,16 @@
 					<!-- <img class="youtube__frame" src="img/youtube-play.png"> -->
 					<iframe class="demo-video" src="https://www.youtube.com/embed/6Jlif7kKf5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-					<button type="button" class="btn-blue like-btn_mobile" aria-label="LIKE-button">
-						<span>like</span>
-						<span class="icon-thumbs-up-alt"></span>
-					</button>
+					<div class="like-btn__container">
+						<button type="button" class="btn-blue like-btn_mobile" aria-label="LIKE-button">
+							<span>like</span>
+							<span class="icon-thumbs-up-alt"></span>
+						</button>
+
+						<div class="puch__animation__container_mobile">
+							<img src="img/punch.gif">
+						</div>
+					</div>
 				</div>
 
 				<div class="demo-descriprion__wrap">
@@ -134,8 +144,10 @@
 					</h2>
 
 					<p class="general-text demo__description">
-						This is the demo video we made using recordings kindly provided by Fight Nights Global. In this video, we demonstrate our current techniques as well as some kicks we are working to
+						This demo video was made using <span class="line_red">Artificial Neural Networks</span> and recordings kindly provided by <a href="https://fightnights.ru/" title="Fight Nights Global Website">Fight Nights Global</a>.<br>
+						In this video we demonstrate our current techniques as well as some kicks we are working to roll out in the near future.
 					</p>
+
 
 					<button type="button" class="btn-blue like-btn" aria-label="LIKE-button">
 						<span>like</span>
@@ -148,71 +160,259 @@
 				</div>
 			</section>
 
-			<section id="technology_mobile" class="technology__slider__wrap  slider__1 flex-container">
-				<h2 class="head-secondary technology__slider__head">
+			<section id="technology-mob" class="technology__slider__wrap flex-container">
+				<h2 class="head-secondary technology__slider__head slider__1__head">
 					What we can do in the nearest future:
 				</h2>
+
+				<h2 class="head-secondary technology__slider__head slider__2__head">
+					Research stage:
+				</h2>
+
 				<div class="owl-carousel owl-theme slider-style">
-					<div class="item technology-item_mobile">
-						<h3 class="item__head">
-							Animated 2D virtual ads
-						</h3>
-						<img src="img/animated_2d_ads.png">
-					</div>
-
-					<div class="item technology-item_mobile">
-						<h3 class="item__head">
-							Simple gamification
-						</h3>
-						<img src="img/simple_gamification.png">
-					</div>
-
-					<div class="item technology-item_mobile">
+					<div class="item technology-item_mobile virt_adv_item_mob">
 						<h3 class="item__head">
 							Virtual advertising
 						</h3>
-						<img src="img/virtual_fix.png">
+						<!-- <img src="img/virtual_fix.png"> -->
+						<img src="img/virt_fix.gif">
+
 					</div>
 
-					<div class="item technology-item_mobile">
+					<div class="item technology-item_mobile simp_gam_item_mob">
+						<h3 class="item__head">
+							Simple gamification
+						</h3>
+						<!-- <img src="img/simple_gamification.png"> -->
+						<img src="img/virt_fix.gif">
+					</div>
+
+					<div class="item technology-item_mobile 2d_ads_item_mob">
+						<h3 class="item__head">
+							Animated 2D virtual ads
+						</h3>
+						<!-- <img src="img/animated_2d_ads.png"> -->
+						<img src="img/virt_fix.gif">
+					</div>
+
+					<div class="item technology-item_mobile vis_eff_item_mob">
 						<h3 class="item__head">
 							Visual effects
 						</h3>
-						<img src="img/virtual_effects.png">
+						<!-- img src="img/virtual_effects.png"> -->
+						<img src="img/virt_fix.gif">
 					</div>
 
-					<div class="item technology-item_mobile">
+					<div class="item technology-item_mobile 3d_inf_item_mob">
 						<h3 class="item__head">
 							3D infographics
 						</h3>
-						<img src="img/3D_infographic.png">
+						<!-- <img src="img/3D_infographic.png"> -->
+						<img src="img/virt_fix.gif">
 					</div>
 
-					<div class="item technology-item_mobile">
+					<div class="item technology-item_mobile 3d_ads_item_mob">
 						<h3 class="item__head">
 							Animated 3D virtual ads
 						</h3>
-						<img src="img/3D_advarsiting.png">
+						<!-- <img src="img/3D_advarsiting.png"> -->
+						<img src="img/virt_fix.gif">
+					</div>
+
+					<div class="item technology-item_mobile 3d_rec_item_mob">
+						<h3 class="item__head">
+							3D reconstruction
+						</h3>
+						<!-- <img src="img/3D_reconstraction.png"> -->
+						<img src="img/virt_fix.gif">
+					</div>
+
+					<div class="item technology-item_mobile adv_gam_item_mob">
+						<h3 class="item__head">
+							Advanced gamification
+						</h3>
+						<!-- <img src="img/advanced_gamification.png"> -->
+						<img src="img/virt_fix.gif">
+					</div>
+
+					<div class="item technology-item_mobile fi_anal_item_mob">
+						<h3 class="item__head">
+							Fight analytics
+						</h3>
+						<!-- <img src="img/fight_anal.png"> -->
+						<img src="img/virt_fix.gif">
 					</div>
 				</div>
 			</section>
 
 			<section id="technology" class="technology-slide__container flex-container">
-				<figure class="technology__wrap_left">
-					<figcaption>
-						<h2 class="head-secondary technology__head">
-							Simple gamification
-						</h2>
+				<div class="technology__wrap_left">
+					<div id="simp_gam_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Simple gamification
+								</h2>
 
-						<p class="general-text technology__description">
-							Many of MMA fans also enjoy playing fight games and would appreciate some of the game features appear on live airings and replays of MMA fights. We can use the information on position of fighters in the video frame to add things like animation of fighter`s name or adding rotating circles around fighter`s legs. We can also add health bars or any other game-like 2D or 3D animations 
-						</p>
-					</figcaption>
+								<p class="general-text technology__description">
+									Many of MMA fans also enjoy playing fight games and would appreciate some of the game features appear on live airings and replays of MMA fights. We can use the information on position of fighters in the video frame to add things like animation of fighter`s name or adding rotating circles around fighter`s legs. We can also add health bars or any other game-like 2D or 3D animations 
+								</p>
+							</figcaption>
 
-					<div class="technology__pic_wrap">
-						<img src="img/octagon.png">
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
 					</div>
-				</figure>
+
+					<div id="virt_adv_card" class="technology__card card__active card__default">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Virtual advertising
+								</h2>
+
+								<p class="general-text technology__description">
+									 We are able to replace any advertisements on canvas, walls or any other place in the cage. The technology enables new options for targeted advertisement, including differentiation based on geography, age or other viewer characteristics.
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap pic_active">
+								<img src="img/virt_fix.gif">
+							</div>
+						</figure>
+					</div>
+
+					<div id="2d_ads_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Animated 2D virtual ads
+								</h2>
+
+								<p class="general-text technology__description">
+									 Ads on canvas and cage posts are static, however, our replacement technology can change animated 2D advertisements on planes during the fight. Such ads can entertain viewers and attract new ones. All we need is a video of an ad and we would overlay it on canvas or cage post’s planes.
+
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+
+					<div id="3d_ads_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Animated 3D virtual ads
+								</h2>
+
+								<p class="general-text technology__description">
+									 Thanks to our algorithms we can find out everything about the video camera based on the movement of logos on canvas and cage walls. Considering this information, we can put any 3D objects anywhere inside the cage. More important, it will not look artificial. Thus, more advertisements can be put inside the fight scene bringing even more advertising revenue.
+
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+
+					<div id="3d_inf_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									3D infographics
+								</h2>
+
+								<p class="general-text technology__description">
+									 Other than for advertisements, our 3D technology can also be used to present some fight-related facts in a more exciting way. 3D donut bar chart rising from the edge of the canvas or heat maps of punch placements on the rotating 3D model of the human body - these options are limited only by the imagination of the designer.
+
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+
+					<div id="vis_eff_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Visual effects
+								</h2>
+
+								<p class="general-text technology__description">
+									 Our technology allows us to put any 2D or 3D animation anywhere on the scene and our abilities are not limited only by advertisements or infographics. MMA fight is, first of all, a show, and our technology can make this show more thrilling, exciting and engaging. Sparks flying from fighters gloves, thunders inside the cage or flames coming from fighters bodies - everything is possible with us.
+
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+
+					<div id="fi_anal_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Fight analytics
+								</h2>
+
+								<p class="general-text technology__description">
+									 We are currently doing research on pose tracking, and once the research is completed, we will be able to collect very useful data on fighter movements. This data can be used to measure the speed of kicks and punches, or even to detect mistakes in fighter techniques. Pose tracking will definitely improve the training process of MMA fighters, it will also provide more interesting information to entertain loyal followers of the sport.
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+
+					<div id="adv_gam_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									Advanced gamification
+								</h2>
+
+								<p class="general-text technology__description">
+									 Information on fighter poses would also expand our possibilities on the gamification front. Knowledge of positions of fighter’s joints will allow us to precisely classify different moves and to add appropriate visual effects. We can also use this information to be sure that our animations precisely follow the movements of fighters, opening up even more options for a designer’s imagination.
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+
+					<div id="3d_rec_card" class="technology__card">
+						<figure class="card">
+							<figcaption>
+								<h2 class="head-secondary technology__head">
+									3D reconstruction
+								</h2>
+
+								<p class="general-text technology__description">
+									The Holy Grail of the Punch-To-Face project is a full 3D reconstruction of MMA fights in Virtual Reality. We work on recreating 3D models of fighters and giving them the ability to copy real fighters moves precisely. When we achieve this goal, there will be an opportunity to watch the fight from any perspective, even from the referee’s viewpoint or fighters themselves. It will take fight replays to a whole new level. 
+								</p>
+							</figcaption>
+
+							<div class="technology__pic_wrap">
+								<img src="img/octagon.png">
+							</div>
+						</figure>
+					</div>
+				</div>
 
 				<div class="technology__wrap_right">
 					<h2 class="head-secondary technology__items__head">
@@ -220,37 +420,41 @@
 					</h2>
 
 					<ul class="technology__items_list">
-						<li class="technology-item">
+						<li id="2d_ads_item" class="technology-item">
 							<h3 class="item__head">
 								Animated 2D virtual ads
 							</h3>
 							<img src="img/animated_2d_ads.png">
 						</li>
-						<li class="technology-item">
+						<li id="simp_gam_item" class="technology-item">
 							<h3 class="item__head">
 								Simple gamification
 							</h3>
 							<img src="img/simple_gamification.png">
 						</li>
-						<li class="technology-item">
+						<li id="virt_adv_item" class="technology-item technology-item__active">
 							<h3 class="item__head">
-									Virtual advertising
+								Virtual advertising
 							</h3>
-							<img src="img/virtual_fix.png">
+							<!-- <img class="item__img_active" src="img/virt_fix.gif">
+							<img class="item__img_passive img_passive" src="img/virt_fix_1_film.png"> -->
+
+							<img class="item__img_active img_passive" src="img/virt_fix.gif">
+							<img class="item__img_passive" src="img/virt_fix_1_film.png">
 						</li>
-						<li class="technology-item">
+						<li id="vis_eff_item"  class="technology-item">
 							<h3 class="item__head">
 								Visual effects
 							</h3>
 							<img src="img/virtual_effects.png">
 						</li>
-						<li class="technology-item">
+						<li id="3d_inf_item" class="technology-item">
 							<h3 class="item__head">
 								3D infographics
 							</h3>
 							<img src="img/3D_infographic.png">
 						</li>
-						<li class="technology-item">
+						<li id="3d_ads_item" class="technology-item">
 							<h3 class="item__head">
 								Animated 3D virtual ads
 							</h3>
@@ -263,19 +467,19 @@
 					</h2>
 
 					<ul class="technology__items_list">
-						<li class="technology-item">
+						<li id="3d_rec_item" class="technology-item">
 							<h3 class="item__head">
 								3D reconstruction
 							</h3>
 							<img src="img/3D_reconstraction.png">
 						</li>
-						<li class="technology-item">
+						<li id="adv_gam_item" class="technology-item">
 							<h3 class="item__head">
 								Advanced gamification
 							</h3>
 							<img src="img/advanced_gamification.png">
 						</li>
-						<li class="technology-item">
+						<li id="fi_anal_item" class="technology-item">
 							<h3 class="item__head">
 								Fight analytics
 							</h3>
@@ -284,67 +488,35 @@
 					</ul>
 				</div>
 			</section>
-
-			<section class="technology__slider__wrap slider__2 flex-container">
-				<h2 class="head-secondary technology__slider__head">
-					Research stage:
-				</h2>
-
-				<div class="owl-carousel owl-theme slider-style">
-					<div class="item technology-item_mobile">
-						<h3 class="item__head">
-							3D reconstruction
-						</h3>
-						<img src="img/3D_reconstraction.png">
-					</div>
-
-					<div class="item technology-item_mobile">
-						<h3 class="item__head">
-							Advanced gamification
-						</h3>
-						<img src="img/advanced_gamification.png">
-					</div>
-
-					<div class="item technology-item_mobile">
-						<h3 class="item__head">
-							Fight analytics
-						</h3>
-						<img src="img/fight_anal.png">
-					</div>
-				</div>
-			</section>
 			
 			<section id="value" class="value-slide__container flex-container">
-				<h2 class="head-secondary value__head">
+				<!-- <h2 class="head-secondary value__head">
 					Value
-				</h2>
+				</h2> -->
 
 				<ul class="value__list">
 					<li class="value__item">
-						With our 2D and 3D virtual advertisement technology we open up new opportunities in advertisement targeting and placement
-						Our ad replacement technology allows for seamless integration of static and animated ads 						into the fight scene. This way broadcasters can show different advertisements to different viewers or sell more places for advertisements. Moreover, animated advertisements are more catchy and should have higher conversion rates. Finally, more creative 3D advertisements may actually improve user experience making the fight show more enjoyable
+						<span class="value__item__first-line_blue"> With our 2D and 3D virtual advertisement technology, we open up new horizons in advertisement targeting and placement.</span><br>
+						Our ad replacement technology allows us to integrate static and animated ads on the fight canvas and cage walls. Therefore broadcasters can demonstrate customized advertisements to viewers. And our technology provides more place for advertisements. Moreover, we suggest an animated advertisement, that is catchier and will have higher conversion rates. Finally, more creative 3D advertisements may actually improve user experience making the fight show more entertaining.
+
 					</li>
 					<li class="value__item">
-						Our approach to tracking camera have minimal equipment requirements, it is the only feasible approach for martial sports we are currently aware of
-						The existing approaches to visual effects are either very time consuming and do not work in real time, or require very expensive cameras and special equipment to track camera movements. Our approach does not require installation of new cameras or attaching any equipment to the cameras. All we need is access to existing cameras, physical measurements of the cage and print-outs of logos on canvas and cage walls
+						<span class="value__item__first-line_blue">Our technology can make MMA broadcasts more exciting and engaging using a wide range of visual effects and game-like 2D and 3D animations.</span><br>
+						MMA fights are, first of all, a show and its main goal is to entertain the audience. Viewer experience will definitely become more exciting with our visual effects, 3D infographics and creative advertisement. This improvement can attract new followers and make the watching more interesting for subscribed ones.
+
 					</li>
 					<li class="value__item">
-						Our technology can make MMA broadcasts more exciting and engaging with wide range of visual effects and game-like 2D and 3D animations
-						MMA fight is most importantly a show and its main goal is to entertain the audience. With our visual effects, 3D infographics and more creative advertisement, the viewer experience will definitely become more exciting. An improvement in viewer experience would attract more audience and would increase sales for existing followers
+						<span class="value__item__first-line_blue">Our approach has minimal equipment requirements.</span><br>
+						The existing approaches to creating visual effects usually do not work in real-time. Also they require very expensive special equipment. Using our way you do not need to install new cameras or any other equipment. All we need is access to existing cameras and information about physical characteristics of a cage.
 					</li>
 					<li class="value__item">
-						We make our software aiming to reduce the pain of integrating developers and designers work.<br>
-						We build on popular software tools among designers such as Blender and Unity, thus reducing overhead required to connect designer and developers work. We work to make sure that our software can take ready animations from clients as an input and output results as close as possible to designer`s imagination
+						<span class="value__item__first-line_blue">Our research team with applied Data Science experience in finance, retail, and tech industries continuously works on new features and products.</span><br>
+						Our main goal is a full 3D reconstruction of MMA fights in Virtual Reality and our researchers work hard to bring us closer to its achievement. Current research focuses heavily on pose tracking and reconstruction of 3D models of fighters. With every breakthrough in our research, we will be able to create more products and features, creating more value for our investors and customers.
+
 					</li>
 					<li class="value__item">
-						We work closely with computer vision experts from OpenDataScience community and benefit from community support.<br>
-						Particularly we benefit from expert advice and volunteer work of community members, which include Kaggle Grandmasters and employees of top research labs and tech startups. We help volunteers to get practical knowledge of Computer Vision and Virtual Reality, while they provide us support with our projects. We would never get this far without their participation
-					</li>
-					<li class="value__item">
-						Our research team with applied Data Science experience in finance, retail and tech industries continuously works on new features and products
-					</li>
-					<li class="value__item">
-						Our main goal is full 3D reconstruction of MMA fights in Virtual Reality and our researchers work hard to bring us closer to achieving it. Current research focuses heavily on pose tracking and reconstruction of 3D models of fighters. With every break-through in our research, we would be able to create more products and features, creating more value for our investors and clients
+						<span class="value__item__first-line_blue">We work closely with computer vision experts from <a href="https://ods.ai" title="ODS website">Open Data Science (ODS.ai)</a> community and grateful for their community support.</span><br>
+						In particular we are grateful for the expert advice and volunteer work of community members, which include Kaggle Grandmasters and employees of top research labs and tech startups. We help volunteers to get practical knowledge of Computer Vision and Virtual Reality, while they provide us support with our projects. We would never get this far without their participation.
 					</li>
 				</ul>
 			</section>
@@ -396,6 +568,18 @@
 
 					<input class="btn-blue feedback__submit" type="submit" name="feedbackSubmitBtn" value="Send">
 				</form>
+
+				<div class="poll__wrap">
+					<p class="poll__invitation">
+						<a class="poll__link head-secondary" href="https://forms.gle/kBLjBeJoW3fzpiqq8" title="Go to the poll">
+							We will be grateful if you could answer some questions!
+						</a>
+					</p>
+ 
+					<!-- <a class="poll__link" href="#" title="Go to the poll">
+						Answer
+					</a> -->
+				</div>
 				
 			</section>
 		</main>
