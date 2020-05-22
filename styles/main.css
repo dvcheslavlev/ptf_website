@@ -81,8 +81,8 @@ main {
 	right: 3%;
 	width: 80px;
 	font-family: Euphemia, sans-serif;
-	font-size: 10px;
-	/*font-size: 5px;*/
+	/*font-size: 10px;*/
+	font-size: 5px;
 	color: grey;
 	margin: 0 auto;
 	opacity: 0.5;
@@ -225,7 +225,7 @@ main {
 	display: block;
 	margin: 10px;
 	border-radius: 6px;
-	filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.25));
+	filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.35));
 	background-color: #ffffff;
 	cursor: pointer;
 	will-change: transform;
