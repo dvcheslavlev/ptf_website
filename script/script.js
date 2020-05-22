@@ -245,6 +245,12 @@ $(document).ready(function(){
   })
 });
 
-
-
-
+$('#octagon_link').click(function(){
+  var tech_status = $('.technology__wrap_right').css('display')
+  console.log(tech_status)
+  if (tech_status == 'block') {
+    $('#octagon_link').attr('href', '#technology')
+  } else {
+    $('#octagon_link').attr('href', '#technology-mob')
+  }
+});
