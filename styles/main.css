@@ -82,10 +82,10 @@ main {
 	width: 80px;
 	font-family: Euphemia, sans-serif;
 	/*font-size: 10px;*/
-	font-size: 5px;
+	font-size: 7px;
 	color: grey;
 	margin: 0 auto;
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 .demo-slide__container {
