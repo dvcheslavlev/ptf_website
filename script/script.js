@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   $(".btn-blue.like-btn").click(function(){
-    gtag('event', 'demo_like', {
-      'event_category': 'click',
-      'event_label': 'feedback'});
+    // gtag('event', 'demo_like', {
+    //   'event_category': 'click',
+    //   'event_label': 'feedback'});
     // $(this).prop("disabled",true);
     // $(this).css({"opacity": '0.5',
     //               'cursor': 'default'});
@@ -19,9 +19,9 @@ $(document).ready(function(){
   });
 
   $(".btn-blue.like-btn_mobile").click(function(){
-    gtag('event', 'demo_like', {
-      'event_category': 'click',
-      'event_label': 'feedback'});
+    // gtag('event', 'demo_like', {
+    //   'event_category': 'click',
+    //   'event_label': 'feedback'});
     // $(this).prop("disabled",true);
     // $(this).css("opacity",'0.5');
     $(this).fadeOut(100);
@@ -36,15 +36,15 @@ $(document).ready(function(){
   });
 
   $(".demo__wrap").click(function(){
-    gtag('event', 'youtube_demo_preview', {
-      'event_category': 'click',
-      'event_label': 'feedback'});
+  //   gtag('event', 'youtube_demo_preview', {
+  //     'event_category': 'click',
+  //     'event_label': 'feedback'});
   });
 
   $(".feedback__submit").click(function(){
-    gtag('event', 'feedback_submit', {
-      'event_category': 'click',
-      'event_label': 'feedback'});
+  //   gtag('event', 'feedback_submit', {
+  //     'event_category': 'click',
+  //     'event_label': 'feedback'});
   });
 
   $('.feedback-form__wrap').on('submit', function(e){
@@ -97,11 +97,16 @@ $('.mobile-nav__btn').click(function() {
   $('.header__navbar_mobile').slideToggle(200);
 });
 
+$("body").on("mouseover", ".technology__card__video", function(){
+  this.play();
+  $(this).attr('loop', 'loop');
+});
+$("body").on("mouseleave", ".technology__card__video", function(){
+  $(this).removeAttr('loop');
+})
 
 const activeCardChange = function() {
   $('.card__active').hide();
-  // $('.technology-item__active .item__img_passive').toggleClass('img_passive');
-  // $('.technology-item__active .item__img_active').toggleClass('img_passive');
   $('.technology-item__active').removeClass('technology-item__active');
   $('.card__active').removeClass('card__active');
 }
@@ -120,6 +125,7 @@ $('#simp_gam_item').click(function() {
   $(this).addClass('technology-item__active');
 });
 
+
 $('#2d_ads_item').click(function() {
   activeCardChange();
   $('#2d_ads_card').addClass('card__active');
@@ -132,8 +138,6 @@ $('#virt_adv_item').click(function() {
   $('#virt_adv_card').addClass('card__active');
   $('#virt_adv_card').fadeIn(400);
   $(this).addClass('technology-item__active');
-  // $('#virt_adv_item .item__img_active').toggleClass('img_passive');
-  // $('#virt_adv_item .item__img_passive').toggleClass('img_passive');
 });
 
 $('#virt_adv_item').hover(function() {

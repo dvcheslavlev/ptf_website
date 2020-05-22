@@ -28,6 +28,11 @@ img {
   user-select: none;
 }
 
+video {
+    width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none !important;
   color: inherit;
