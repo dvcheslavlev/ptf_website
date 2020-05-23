@@ -94,13 +94,12 @@ main {
 	background: url(img/arrow_slide_2.png) 100% 89% no-repeat;
 }
 
-/*.demo__wrap {
-	max-width: 570px;
-}*/
-
 .demo-video {
 	width: 560px; 
 	height: 315px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+	border: 1px solid white;
+/*	border-radius: 10px;*/
 }
 
 .demo-descriprion__wrap {
