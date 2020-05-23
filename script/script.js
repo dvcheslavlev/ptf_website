@@ -47,7 +47,7 @@ $(document).ready(function(){
       'event_label': 'feedback'});
   });
 
-  $(".poll_invitation").click(function(){
+  $(".poll__invitation").click(function(){
     gtag('event', 'poll', {
       'event_category': 'click',
       'event_label': 'feedback'});
