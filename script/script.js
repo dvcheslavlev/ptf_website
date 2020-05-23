@@ -4,10 +4,7 @@ $(document).ready(function(){
     gtag('event', 'demo_like', {
       'event_category': 'click',
       'event_label': 'feedback'});
-    // $(this).prop("disabled",true);
-    // $(this).css({"opacity": '0.5',
-    //               'cursor': 'default'});
-    $(this).fadeOut(100);
+    $(this).hide()
     function showPunch() {
         $('.puch__animation__container').fadeIn(100);
         }
@@ -16,15 +13,22 @@ $(document).ready(function(){
         $('.puch__animation__container').hide();
         }
     setTimeout(cleanPunch, 1000);
+    function showButton() {
+    	$('.btn-blue.like-btn').prop("disabled",true);
+    	$('.btn-blue.like-btn').css({"opacity": '0.5',
+                  						'cursor': 'default'});
+    	$('.btn-blue.like-btn').fadeIn(100)
+    }
+    setTimeout(showButton, 1000);
   });
 
   $(".btn-blue.like-btn_mobile").click(function(){
     gtag('event', 'demo_like', {
       'event_category': 'click',
       'event_label': 'feedback'});
-    // $(this).prop("disabled",true);
-    // $(this).css("opacity",'0.5');
-    $(this).fadeOut(100);
+    $(this).prop("disabled",true);
+    $(this).css("opacity",'0.5');
+    $(this).hide();
     function showPunch() {
         $('.puch__animation__container_mobile').fadeIn(100);
         }
@@ -33,6 +37,13 @@ $(document).ready(function(){
         $('.puch__animation__container_mobile').hide();
         }
     setTimeout(cleanPunch, 1000);
+    function showButton() {
+    	$('.btn-blue.like-btn_mobile').prop("disabled",true);
+    	$('.btn-blue.like-btn_mobile').css({"opacity": '0.5',
+                  						'cursor': 'default'});
+    	$('.btn-blue.like-btn_mobile').fadeIn(100)
+    }
+    setTimeout(showButton, 1000);
   });
 
   $(".demo__wrap").click(function(){
