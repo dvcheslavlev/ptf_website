@@ -197,12 +197,6 @@ main {
 	z-index: -3;
 }
 
-.technology__pic_wrap img {
-	/*-webkit-filter: drop-shadow(2.878px 10px 10px rgba(0,0,0,0.14));
-	filter: drop-shadow(2.878px 10px 10px rgba(0,0,0,0.14));*/
-	overflow: hidden;
-}
-
 .technology__wrap_right {
 	max-width: 465px;
 }
@@ -220,7 +214,6 @@ main {
 
 .technology-item {
 	width: 130px;
-/*	height: 130px;*/
 	flex-grow: 1;
 	display: block;
 	margin: 10px;
@@ -229,17 +222,10 @@ main {
 	background-color: #ffffff;
 	cursor: pointer;
 	will-change: transform;
+	/*устранение ошибки с выпиранием на винде!*/
+	overflow: hidden;
 }
 
-/*.technology-item img {
-	-webkit-filter: drop-shadow(2.878px 10px 10px rgba(0,0,0,0.14));
-	filter: drop-shadow(2.878px 10px 10px rgba(0,0,0,0.14));
-}*/
-
-/*.img_passive {
-	display: none;
-}
-*/
 .technology-item__active {
 	transform: scale(0.9);
 	transition: 0.3s;
@@ -287,7 +273,7 @@ main {
 .value-slide__container {
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 80px 140px;
+	padding: 80px 140px 0 140px;
 }
 
 .value__head {
@@ -327,7 +313,6 @@ main {
 
 .animation__container {
 	justify-content: center;
-	margin-top: -170px;
 }
 
 .animation__wrap {
@@ -391,9 +376,13 @@ main {
 	height: 100px;
 	margin: 25px 0;
 	background-color: #f2f2f2;
+	padding: 5px;
 	border: none;
 	outline: none;
 	box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset; 
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-size: 16px;
 } 
 
 .feedback__submit {
