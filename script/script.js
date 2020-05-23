@@ -47,6 +47,12 @@ $(document).ready(function(){
       'event_label': 'feedback'});
   });
 
+  $(".poll_invitation").click(function(){
+    gtag('event', 'poll', {
+      'event_category': 'click',
+      'event_label': 'feedback'});
+  });
+
   $('.feedback-form__wrap').on('submit', function(e){
                    // validation code here
       e.preventDefault();
