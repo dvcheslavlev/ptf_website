@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   $(".btn-blue.like-btn").click(function(){
-    // gtag('event', 'demo_like', {
-    //   'event_category': 'click',
-    //   'event_label': 'feedback'});
+    gtag('event', 'demo_like', {
+      'event_category': 'click',
+      'event_label': 'feedback'});
     $(this).hide()
     function showPunch() {
         $('.puch__animation__container').fadeIn(100);
@@ -23,9 +23,9 @@ $(document).ready(function(){
   });
 
   $(".btn-blue.like-btn_mobile").click(function(){
-    // gtag('event', 'demo_like', {
-    //   'event_category': 'click',
-    //   'event_label': 'feedback'});
+    gtag('event', 'demo_like', {
+      'event_category': 'click',
+      'event_label': 'feedback'});
     $(this).prop("disabled",true);
     $(this).css("opacity",'0.5');
     $(this).hide();
@@ -47,21 +47,21 @@ $(document).ready(function(){
   });
 
   $(".demo__wrap").click(function(){
-    // gtag('event', 'youtube_demo_preview', {
-    //   'event_category': 'click',
-    //   'event_label': 'feedback'});
+    gtag('event', 'youtube_demo_preview', {
+      'event_category': 'click',
+      'event_label': 'feedback'});
   });
 
   $(".feedback__submit").click(function(){
-    // gtag('event', 'feedback_submit', {
-    //   'event_category': 'click',
-    //   'event_label': 'feedback'});
+    gtag('event', 'feedback_submit', {
+      'event_category': 'click',
+      'event_label': 'feedback'});
   });
 
   $(".poll__invitation").click(function(){
-    // gtag('event', 'poll', {
-    //   'event_category': 'click',
-    //   'event_label': 'feedback'});
+    gtag('event', 'poll', {
+      'event_category': 'click',
+      'event_label': 'feedback'});
   });
 
   $('.feedback-form__wrap').on('submit', function(e){
