@@ -230,7 +230,7 @@
 	background-color: #313131;
 }
 
-.header__navbar, .intro__pic_wrap, .freepik, .like-btn, .technology__pic_wrap, .technology__wrap_right, .animation__container, .footer-bar {
+.header__navbar, .octagon__desktop, .intro__pic_wrap, .freepik, .like-btn, .technology__pic_wrap, .technology__wrap_right, .animation__container, .footer-bar {
 	display: none;
 }
 
@@ -253,6 +253,10 @@
 
 .intro_pic_secondary, .technology__pic_wrap {
 	max-width: 260px;
+}
+
+.octagon__mobile {
+	display: block;
 }
 
 .demo-slide__container {
